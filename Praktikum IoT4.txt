@@ -1,0 +1,20 @@
+from gpio import *
+from time import *
+
+def main():
+	while True:
+		motion_sensor = digitalRead(0)
+		if motion_sensor == HIGH:
+			print('Lampu nyala')
+			print('Garasi terbuka')
+			customWrite(1,1)
+			customWrite(2,1)
+			delay(1000)
+		else:
+			print('Lampu mati')
+			print('Garasi tertutup')
+			customWrite(1,0)
+			customWrite(2,0)
+
+if __name__ == "__main__":
+	main()
