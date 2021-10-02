@@ -1,16 +1,15 @@
 Terdapat Server, Switch, Wireless, PC, Motion Detector, Light, Door
 
-a.	IOT SERVER
-
+a. IOT SERVER
 Pada server , sebelumnya sudah membuat sebuah akun pada IoT Services yang mana username dan password nya digunakan untuk mengakses Registrasion Server dengan IPvAddress yang sudah dibuat pada server yaitu 192.168.0.10. Pada device nya untuk konfigurasi IoT Server akan menggunakan Remote Server dengan Server Address yg sesuai yaitu 192.168.0.10 dengan username dan password yang telah diinputkan pada service Server bagian IoT.
 
-b.	AAA
+b. AAA
 Pada service server mengaktifkan AAA dengan membuat client Name HomeGateway, membuat client ip yaitu 192.168.0.1, dan membuat secret password elya123 dengan type servernya Radius. Pada user setup akan membuat username dan password yang unik atau berbeda dengan antar device, jadi membuat satu akun untuk satu device. Yang mana nantinya device-device tersebut akan dihubungkan dengan server menggunakan username dan password masing-masing
 
-c.	WIRELESS
+c. WIRELESS
 Pada wireless router pada GUI Wirelessnya menggunakan network Name(SSID) dengan HomeGateway sesuai dengan Client Name nya yaitu HomeGateway dan Wireless Securitynya yaitu WPA Enterprise, encryption AES, Radius Server yaitu 192.168.0.10 menyesuaikan dengan IPvAddress nya dan Share secretnya elya123 mengikuti key pada network configuration pada AAA. Pada device nya diklik I/O Config dengan Network Adapter PT-IOT-NW-1W-AC. Lalu secara otomatis masing-masing device akan terhubung dengan jaringa wireless pada router
 
-d.	PC
+d. PC
 Pada PC diatur dengan IPv4Address 192.168.0.5 dengan default gateway yaitu 192.168.0.1
 
 CARA KERJA
