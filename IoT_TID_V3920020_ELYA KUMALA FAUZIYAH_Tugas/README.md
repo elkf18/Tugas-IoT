@@ -1,6 +1,7 @@
 Terdapat Server, Switch, Wireless, PC, Motion Detector, Light, Door
 
 a.	IOT SERVER
+
 Pada server , sebelumnya sudah membuat sebuah akun pada IoT Services yang mana username dan password nya digunakan untuk mengakses Registrasion Server dengan IPvAddress yang sudah dibuat pada server yaitu 192.168.0.10. Pada device nya untuk konfigurasi IoT Server akan menggunakan Remote Server dengan Server Address yg sesuai yaitu 192.168.0.10 dengan username dan password yang telah diinputkan pada service Server bagian IoT.
 
 b.	AAA
