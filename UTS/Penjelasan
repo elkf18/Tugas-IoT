@@ -1,0 +1,13 @@
+Membuat silmulasi dengan tema Smart Home
+Terdapat server, switch, wireless router, dan device
+Pada server menggunakan Ip Address 192.168.0.10 dengan default gateway 192.169.0.1. Membuat security AAA dengan client name “Home”, secret”elya123”, Client IP 192.168.0.1 dengan serverType nya Radius. Membuat user setup dengan username dan password menyesuaikan nama device masing-masing.
+Device terhubung dengan wireless router dengan menggunakan network Adapter PT-IOT-NM-1W-AC dengan saat config Wirelessnya menggunakan SSID” Home” sesuai dengan wireless routernya dengan security nya menggunakan User ID sesuai dengan yang telah diinputkan di AAA masing-masing device. Pada setting device menggunakan IoT Server, server address192.168.0.10 dengan username dan password elya dan dikoneksikan.
+Pada registrasion servernya menggunakan username dan password elya dan pada Web browser mengetikan URL dengan 192.168.0.10 lalu login dengan menggunakan username dan password elya. Dan maka akan terlihat device dari IoT Servernya . membuat kondisi
+a.	Jika Humifidier nyala maka AC akan mati, jika Humifidier mati maka AC akan menyala
+b.	Jika door nya tidak terkunci maka webcam akan nyala, jika doornya terkunci maka webcam akan mati
+c.	Jika window1 dan window2 mati maka light akan nyala, jika window1 dan window2 nyala maka light akan mati
+d.	Jika motion detector mendeteksi maka door akan unlock, jika motion detector tidak mendeteksi maka door akanterkunci
+e.	Jika signal speaker lebih dari 0.5 maka door2 akan terbuka, jika kuran dari 0.5 maka door2 akan menutup
+f.	Jika fan mati maka window 1 dan window 2 akan membuka, jika fan hidup maka maka window 1 dan window 2 akan menutup
+g.	Jika co2 Level > 0.06 maka akan garage akan terbuka, jika co2 Level < 0.06 maka garage akan menutup
+
