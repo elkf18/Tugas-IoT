@@ -5,7 +5,7 @@ import datetime
 from datetime import datetime
 import random
 
-db = MySQLdb.connect("localhost", "root", "", "iot2")
+db = MySQLdb.connect("localhost", "root", "", "smarthome")
 cursor = db.cursor()
 
 sql2 = cursor.execute("select count(*) from tb_sensor")
