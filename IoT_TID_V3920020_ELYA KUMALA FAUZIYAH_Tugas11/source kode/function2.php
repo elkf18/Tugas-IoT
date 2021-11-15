@@ -1,6 +1,6 @@
 <?php
 // Koneksi Database
-$koneksi = mysqli_connect("localhost", "root", "", "smathome");
+$koneksi = mysqli_connect("localhost", "root", "", "smarthome");
 
 // membuat fungsi query dalam bentuk array
 function query($query)

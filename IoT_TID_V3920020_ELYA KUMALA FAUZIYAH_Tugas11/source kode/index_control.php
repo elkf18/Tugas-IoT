@@ -93,20 +93,21 @@ $tb_control = query("SELECT * FROM tb_control ORDER BY id_control DESC");
                             <tr>
                                 <td><?= $no++; ?></td>
                                 <td><?= $row['nama_objek_control']; ?></td>
-                                <td><div class="card-body">
-                                    <h5 class="card-title">
-                                      <?php
-                                      if ($row['status_control'] == '0') {
-                                        $status_control = "OFF";
-                                      } else {
-                                        $status_control = "ON";
-                                      }
-                                      echo "Status: " . $status_control;
-                                      ?>
-                                    </h5>
-                                    <a href="control.php?id=2&status_control=1" class="btn btn-success">ON</a>
-                                    <a href="control.php?id=4&status_control=0" class="btn btn-danger">OFF</a>
-                                  </div>
+                                <td>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <?php
+                                            if ($row['status_control'] == '0') {
+                                                $status_control = "OFF";
+                                            } else {
+                                                $status_control = "ON";
+                                            }
+                                            echo "Status: " . $status_control;
+                                            ?>
+                                        </h5>
+                                        <a href="control.php?id_control=<?= $row['id_control']; ?>&status_control=1" class="btn btn-success">ON</a>
+                                        <a href="control.php?id_control=<?= $row['id_control']; ?>&status_control=0" class="btn btn-danger">OFF</a>
+                                    </div>
                                 <td>
                                     <button class="btn btn-success btn-sm text-white detail" data-id="<?= $row['id_control']; ?>" style="font-weight: 600;"><i class="bi bi-info-circle-fill"></i>&nbsp;Detail</button> |
 
@@ -138,8 +139,8 @@ $tb_control = query("SELECT * FROM tb_control ORDER BY id_control DESC");
     </div>
     <!-- Close Modal Detail Data -->
 
-    
-   
+
+
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
