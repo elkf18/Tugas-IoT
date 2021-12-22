@@ -25,7 +25,7 @@ void setup() {
 }
 
 void loop() {
-  int sensor = analogRead(0);
+  int sensor = analogRead(A0);
   Serial.println(sensor);
 
 //  cek koneksi
